@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Explore</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+
+<header>
+
+	<a href="#" class="logo"><img src="images/logo.png" ></a>
+	<ul>
+		<li><a href="index.html" >Home</a></li>
+		<li><a href="https://hackclub.com">About</a></li>
+		<li><a href="#" class="active">Explore</a></li>
+		<li><a href="https://linktr.ee/HackClubNUV">Contact</a></li>
+	</ul>
+</header>
+
+<section>
+	<img src="images/caveback.png" id="caveback">
+	<h2 id="text">Explore!</h2>
+	<img src="images/Boy.png" id="boy">
+	<img src="images/cavefront.png" id="cavefront">
+</section>
+
+<div class="sec" id="sec">
+	<h2>Our Motto</h2>
+	<p>Hack Club is a community which encourages beginners to start coding by supporting and enabling our members to participate in Hackthons and organize workshops, through which, our members will be walked through building interesting projects. :octopus: 
+	At Hack Club, we aim to help other programmers learn and collaborate on various projects. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.<br><br></p>
+</div>
+
+<script type="text/javascript">
+	
+let caveback = document.getElementById('caveback');
+let text = document.getElementById('text');
+let boy = document.getElementById('boy');
+let cavefront = document.getElementById('cavefront');
+let header = document.querySelector('header')
+
+window.addEventListener('scroll', function(){
+	let value = window.scrollY;
+
+	caveback.style.top = value*0.5 + 'px';
+	boy.style.left = value*0.5 + 'px';
+	boy.style.top = value*0.5 + 'px';
+	cavefront.style.top = value*0 + 'px';
+	text.style.marginRight = value*4 + 'px';
+	text.style.marginTop = value*1.5 + 'px';
+	header.style.top = value*0.5 + 'px';
+})
+
+</script>
+
+</body>
+</html>
